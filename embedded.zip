@@ -1,1 +1,1 @@
-This is a self contained Python already pre-configured to allow the AutoActionKey to run properly. Feel free to run the script on your own Python install if you wish. This is for quick, easy, and user friendly deployment.
+This is a self contained Python 3.14.4 embed (amd64) already pre-configured to allow the AutoActionKey to run properly. Feel free to run the script on your own Python install if you wish. This is for quick, easy, and user friendly deployment.
