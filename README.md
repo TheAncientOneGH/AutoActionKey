@@ -7,7 +7,8 @@ AutoActionKey
 
 for games that use annoying input methods that require you to single click every spec of dust
 on a planet in order to play. For example: cleaning up trash in Farmer's Dynasty 2. The devs
-really want my carpal tunnel syndrome to kick in at full effect..
+really want my carpal tunnel syndrome to kick in at full effect.. This script can be used for
+any game or app etc.. It does not check what you have running.
 
 The Embedded Python provided is pre-configured and should work just fine for allowing this script
 to run isolated by itself. To run from your own copy of Python, be sure you install the folowing
