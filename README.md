@@ -16,7 +16,7 @@ packages
 
 keyboard, rich, pynput
 
-By default this is setup to spam E when you hold E down making cleaning up properties in the game
+By default this is setup to spam E when you hold F down making cleaning up properties in the game
 Farmer's Dynasty 2 so much better and less stress on your hands (and keyboard).
 
 [ Installation ]
