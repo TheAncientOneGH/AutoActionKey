@@ -1,6 +1,6 @@
 # [ About ]
 #
-# AutoActionKey v1.1
+# AutoActionKey v1.2
 #
 # for games that use annoying input methods that
 # require you to single click every spec of dust
@@ -80,16 +80,29 @@ KEY_DELAY = 0.006
 ############## [ END CONFIG OPTIONS ] ##############
 #
 import os
+import sys
+import subprocess
+
+def imPackage(package, version):
+    try:
+        import package
+    except ImportError:
+        subprocess.check_call(['./embedded/python.exe', '-m', 'pip', 'install', package + '==' + version])
+    return
+
+imPackage('keyboard', '0.13.5')
+imPackage('rich', '15.0.0')
 import time
 import random
 import keyboard as kb
 from rich import print
+imPackage('pynput', '1.8.1')
 from pynput import keyboard
 from pynput.keyboard import Controller, GlobalHotKeys
 
 controller = Controller()
 listener = None
-VER = "1.1"
+VER = "1.2"
 SCR_E = True
 MY_KEY_TOTAL = 0
 ACTION_KEY_TOTAL = 0
