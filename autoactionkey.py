@@ -1,6 +1,6 @@
 # [ About ]
 #
-# AutoActionKey v1.2
+# AutoActionKey v1.3
 #
 # for games that use annoying input methods that
 # require you to single click every spec of dust
@@ -87,7 +87,7 @@ def imPackage(package, version):
     try:
         import package
     except ImportError:
-        subprocess.check_call(['./embedded/python.exe', '-m', 'pip', 'install', package + '==' + version])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package + "==" + version, '--no-warn-script-location'])
     return
 
 imPackage('keyboard', '0.13.5')
