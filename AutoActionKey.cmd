@@ -2,7 +2,7 @@
 
 TITLE=AutoActionKey
 cd %~dp0
-set /a savereq=1
+set /a savereq=0
 set "applock=%~dp0aak.lock"
 set "venvname=.aak"
 set "verstr=1.3"
